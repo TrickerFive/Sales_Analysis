@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem 
+    id="menu_financial_analysis" 
+    name="Financial Analysis" 
+    sequence="1" 
+    action="Sales_Analysis.action_financial_analysis"/>
+
+    <menuitem 
+    id="menu_sales_analysis" 
+    name="Sales Analysis" 
+    sequence="2" 
+    action="Sales_Analysis.action_sales_analysis"/>
+</odoo>

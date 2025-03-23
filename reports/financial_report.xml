@@ -1,0 +1,39 @@
+<odoo>
+    <report
+        id="financial_analysis_report"
+        model="financial.analysis"
+        string="Financial Analysis Report"
+        report_type="qweb-pdf"
+        name="module_name.financial_analysis_report"
+        file="module_name.financial_analysis_report"
+    />
+    <template id="financial_analysis_report_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Financial Analysis Report</h2>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Total Income</th>
+                                    <th>Total Expense</th>
+                                    <th>Net Profit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><t t-esc="doc.date"/></td>
+                                    <td><t t-esc="doc.total_income"/></td>
+                                    <td><t t-esc="doc.total_expense"/></td>
+                                    <td><t t-esc="doc.net_profit"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

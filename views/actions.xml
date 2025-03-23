@@ -1,0 +1,13 @@
+<odoo>
+    <record id="action_financial_analysis" model="ir.actions.act_window">
+    <field name="name">Financial Analysis</field>
+    <field name="res_model">financial.analysis</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+    <record id="action_sales_analysis" model="ir.actions.act_window">
+        <field name="name">Sales Analysis</field>
+        <field name="res_model">sale.analysis</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
